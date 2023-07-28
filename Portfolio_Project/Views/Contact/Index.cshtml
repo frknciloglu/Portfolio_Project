@@ -1,0 +1,124 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Portfolio")
+
+<body>
+    <!-- header -->
+    @Html.Action("PartialNavbar", "Portfolio")
+    <!-- //header -->
+    <!-- contact breadcrumb -->
+    <section class="w3l-about-breadcrumb text-center">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+            <div class="container py-2">
+                <h2 class="title">Bana Ulaş</h2>
+                <ul class="breadcrumbs-custom-path mt-2">
+                    <li><a href="/Portfolio/Index">Anasayfa</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Bana Ulaş </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- contact breadcrumb -->
+    <!-- contact block -->
+    <!-- contact1 -->
+    <section class="w3l-contact-1 py-5">
+        <div class="contacts-9 py-lg-5 py-md-4">
+            <div class="container">
+                <div class="d-grid contact-view">
+                    <div class="cont-details">
+                        <div class="cont-top">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-phone text-primary"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>+905416720930</h6>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="cont-top margin-up">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-envelope-o text-primary"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Email</h6>
+                                <p>clglufurkan@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="cont-top margin-up">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-map-marker text-primary"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Location</h6>
+                                <p>Ankara </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-content-9">
+                        <form method="post">
+                            <div class="twice-two">
+                                <input type="text" class="form-control" name="w3lName" id="NameSurname" placeholder="Adınız"
+                                       required="">
+                                <input type="email" class="form-control" name="w3lSender" id="SenderMail" placeholder="Email"
+                                       required="">
+                            </div>
+                            <div class="twice">
+                                <input type="text" class="form-control" name="MessageSubject" id="w3lSubject"
+                                       placeholder="Konu" required="">
+                            </div>
+                            <textarea name="Content" class="form-control" id="w3lMessage" placeholder="Mesaj"
+                                      required=""></textarea>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-primary btn-style mt-4">Mesajı Gönder</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /contact1 -->
+    <div class="map-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97909.02609406594!2d32.78000486035156!3d39.926690011770674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d348d5d5f41a55%3A0x27c5ef75cef0ea89!2zQXRhdMO8cmsgT3JtYW4gw4dpZnRsacSfaQ!5e0!3m2!1str!2str!4v1689066384876!5m2!1str!2str"
+                width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
+    </div>
+    <!-- //contact block -->
+    <!-- Footer -->
+    <section class="w3l-footer py-sm-5 py-4">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-8 footer-left">
+                        <p class="m-0">Alexander © Copyright 2020. Design by <a href="https://w3layouts.com">W3layouts</a></p>
+                    </div>
+                    <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+                        <ul class="social m-0 p-0">
+                            <li><a href="https://github.com/frknciloglu"><span class="fa fa-github"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/frkncloglu1994/"><span class="fa fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        @Html.Action("PartialScript", "Portfolio")
+
+</body>
+
+</html>

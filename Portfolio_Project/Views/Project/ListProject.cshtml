@@ -1,0 +1,51 @@
+﻿@model List<Portfolio_Project.Models.Entities.TblProject>
+
+@{ Layout = null; }
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Portfolio")
+
+<body>
+    <!-- header -->
+    @Html.Action("PartialNavbar", "Portfolio")
+    <!-- //header -->
+    <!-- contact breadcrumb -->
+
+    <section class="w3l-about-breadcrumb text-center">
+        <br />
+        <div class="container">
+
+            <table class="table table-bordered">
+                <tr>
+                    <th>Proje Adı</th>
+                    <th>Proje Açıklaması</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ProjectName</td>
+                        <td>@item.ProjectDescription</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </section>
+    <!-- contact breadcrumb -->
+    <!-- contact block -->
+    <!-- contact1 -->
+    <!-- /contact1 -->
+    <!-- //contact block -->
+    <!-- Footer -->
+    <!-- //Footer -->
+    <!-- all js scripts and files here -->
+
+ @Html.Action("PartialScript","Portfolio")
+</body>
+
+</html>

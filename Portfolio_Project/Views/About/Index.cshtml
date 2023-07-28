@@ -1,0 +1,73 @@
+﻿
+
+@{ Layout = null; }
+
+
+@{ Layout = null; }
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Portfolio")
+
+<body>
+    <!-- header -->
+    @Html.Action("PartialNavbar", "Portfolio")
+    <!-- //header -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section class="w3l-aboutblock1" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="position-relative">
+                        <img src="~/Templates/linkedinqr.jpg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-lg-0 mt-5">
+                    <h5 class="title-small mb-2">Full-Stack Software Developer</h5>
+                    <p class="mt-4">
+                        Merhaba 👋, Ben Furkan. 2016'da Gazi Üniversitesi İnşaat Mühendisliğinden mezun oldum. Eğitim ve iş hayatımda yazılıma olan ilgimin nedeni ile aldığım eğitimlere ek olarak Bilişim Eğitim Merkezi Fullstack developer eğitimi aldım. Full Stack Developer olarak aldığım eğitim sürecimde C# - ASP.NET CORE - ASP.NET CORE MVC - ASP.NET Web Api - OOP - Entity Framework - MSSQL Server - PostgreSQL - HTML5 - CSS - Java Script ve React JS konularında almakta olduğum eğitimlerle kendimi geliştirmeye devam etmekteyim. Güncel olarak  web uygulamaları geliştiriyorum. Bu süreçte öğrenmekten keyif aldığım gibi yazılım geliştirme projelerinde de aktif görev almayı hedeflemekteyim.
+                    </p>
+                    <div class="my-info mt-4">
+                        <div class="single-info">
+                            <span>İsim Soyisim:</span>
+                            <p>Furkan Çİloğlu</p>
+                        </div>
+                        <div class="single-info">
+                            <span>Doğum Tarihi:</span>
+                            <p>05.06.1994</p>
+                        </div>
+                        <div class="single-info">
+                            <span>Lokasyon:</span>
+                            <p>Türkiye, Ankara</p>
+                        </div>
+                        <div class="single-info">
+                            <span>Mail:</span>
+                            <p>clglufurkan@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-right text-lg-right text-center mt-lg-0 mt-3">
+                        <ul class="social m-0 p-0">
+                            <li><a href="https://github.com/frknciloglu"><span class="fa fa-github"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/frkncloglu1994/"><span class="fa fa-linkedin"></span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+@Html.Action("PartialScript","Portfolio")
+</body>
+
+</html>
